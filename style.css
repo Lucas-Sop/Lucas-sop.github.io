@@ -1,6 +1,7 @@
 
 /*---------RESETEO---------*/
 *{ margin: 0; padding: 0;     
+    transition: all 0.5s ease-in-out;
 }
 /*SETEO DE COLORES*/
 :root {
@@ -10,7 +11,6 @@
     --bg-azul:rgb(12, 123, 228);
     --txt-gris:rgb(128, 128, 128);
     --blanco:rgb(255,255,255);
-    --bg-rojizo: rgb(228, 73, 34);
   }
 
 .container {
@@ -25,6 +25,9 @@
     width: 20rem;
 }
 
+.container .img:hover{
+    transform: scaley(1.25) scaleX(1.25);
+}
 /*----------------------------------
 -------------INONO MULTIFOTO---------
 ------------------------------------*/
@@ -37,7 +40,7 @@
     height: 2.5vh;
     border-radius: 20%;
     background-color: var(--bg-gris-intermedio);
-    cursor:grab;
+    cursor: pointer;
 }
 
 .container .img .multifoto:hover{
@@ -97,7 +100,6 @@
     color: var(--bg-celeste);
     font-size: 2rem;
     font-weight: 200;
-    cursor:grab;
 }
 .container .card .textoPrincipal span:hover{
     color: var(--bg-azul);
@@ -138,7 +140,7 @@
     border: 0.5px solid rgb(184, 178, 178);        
 }
 .container .card .botonera .botonCorazon:hover{
-    background-color:var(--bg-rojizo);      
+    background-color:var(--bg-gris-intermedio);      
 }
 
 .container .card .botonera .botonCorazon span{
@@ -146,10 +148,18 @@
     font-size: 1.5rem;
 
 }
+
+.container .card .botonera .botonCorazon:hover span {
+    color: var(--blanco)
+}
+
 .container .card .botonera .botonCorazon p{
     margin-top: 25%;
     color: var(--txt-gris);
     font-size: 0.9rem;
+}
+.container .card .botonera .botonCorazon:hover p{
+    color: var(--blanco)
 }
 
 /*----------------------------------
@@ -167,15 +177,26 @@
     border: 0.5px solid rgb(184, 178, 178);        
 }
 .container .card .botonera .botonCompartir:hover{ 
-    background-color: var(--bg-rojizo);        
+    background-color: var(--bg-gris-intermedio);        
 }
 .container .card .botonera .botonCompartir span{
     color: var(--txt-gris);
     font-size: 1.3rem;
     padding-right: 3%;
 }
+.container .card .botonera .botonCompartir:hover span{
+    color: var(--blanco)
+}
+
 .container .card .botonera .botonCompartir p{
     margin-top: 25%;
     color: var(--txt-gris);
     font-size: 0.8rem;
+}
+.container .card .botonera .botonCompartir:hover p{
+    color: var(--blanco)
+}
+
+.material-symbols-outlined {
+    cursor: pointer !important;;
 }
