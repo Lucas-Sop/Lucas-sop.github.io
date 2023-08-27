@@ -1,0 +1,181 @@
+
+/*---------RESETEO---------*/
+*{ margin: 0; padding: 0;     
+}
+/*SETEO DE COLORES*/
+:root {
+    --bg-gris-intermedio:rgb(210, 210, 210);
+    --bg-gris-oscuro: rgb(80, 70, 80);
+    --bg-celeste: rgb(85, 164, 238);
+    --bg-azul:rgb(12, 123, 228);
+    --txt-gris:rgb(128, 128, 128);
+    --blanco:rgb(255,255,255);
+    --bg-rojizo: rgb(228, 73, 34);
+  }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.card{
+    width: 20rem;
+}
+
+/*----------------------------------
+-------------INONO MULTIFOTO---------
+------------------------------------*/
+
+.container .img .multifoto {
+    position: absolute;
+    left: 85%;
+    bottom: 40%;
+    width: 2.5rem;
+    height: 2.5vh;
+    border-radius: 20%;
+    background-color: var(--bg-gris-intermedio);
+    cursor:grab;
+}
+
+.container .img .multifoto:hover{
+    background-color: var(--bg-gris-oscuro);
+}
+
+.container .img .multifoto p{
+    position: absolute;
+    font-size: 1rem;
+    width: 1rem;
+    height: 1vh;
+    left: 10%;
+    color: var(--blanco);
+}
+
+.container .img .multifoto .rectangulo1{
+    display: flex;
+    position: absolute;
+    width: 1rem;
+    height: 1vh;
+    right: 10%;
+    top: 35%;
+    border-radius: 10%;
+    border: 0.5px solid var(--blanco);
+}
+.container .img .multifoto .rectangulo2{
+    display: flex;
+    position: absolute;
+    width: 1rem;
+    height: 1vh;
+    right: 15%;
+    top: 30%;
+    border-radius: 10%;
+    background-color: var(--bg-gris-intermedio);
+    border: 0.5px solid var(--blanco);
+}
+.container .img .multifoto .rectangulo2:hover{
+    background-color: var(--bg-gris-oscuro);
+}
+
+/*----------------------------------
+-------------TEXTO Y INFO------------
+------------------------------------*/
+
+.container .card .textoPrincipal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.container .card .textoPrincipal p{
+    font-size: 1.2rem;
+    color: var(--txt-gris);
+}
+
+.container .card .textoPrincipal span{
+    color: var(--bg-celeste);
+    font-size: 2rem;
+    font-weight: 200;
+    cursor:grab;
+}
+.container .card .textoPrincipal span:hover{
+    color: var(--bg-azul);
+}
+
+
+/*----------------------------------
+----------------BOTONERA------------
+------------------------------------*/
+.container .card .botonera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .card .botonera a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 10rem;
+    font-size: 1rem;
+    height: 5vh;
+    
+}
+
+/*----------------------------------
+----------------ME GUSTA------------
+------------------------------------*/
+
+.container .card .botonera .botonCorazon{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 9%;
+    background-color: var(--blanco);
+    height: 5vh;
+    width: 3.7rem;
+    border: 0.5px solid rgb(184, 178, 178);        
+}
+.container .card .botonera .botonCorazon:hover{
+    background-color:var(--bg-rojizo);      
+}
+
+.container .card .botonera .botonCorazon span{
+    color: var(--txt-gris);
+    font-size: 1.5rem;
+
+}
+.container .card .botonera .botonCorazon p{
+    margin-top: 25%;
+    color: var(--txt-gris);
+    font-size: 0.9rem;
+}
+
+/*----------------------------------
+----------------COMPARTIR------------
+------------------------------------*/
+
+.container .card .botonera .botonCompartir{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 9%;
+    background-color:var(--blanco);
+    height: 5vh;
+    width: 4rem;
+    border: 0.5px solid rgb(184, 178, 178);        
+}
+.container .card .botonera .botonCompartir:hover{ 
+    background-color: var(--bg-rojizo);        
+}
+.container .card .botonera .botonCompartir span{
+    color: var(--txt-gris);
+    font-size: 1.3rem;
+    padding-right: 3%;
+}
+.container .card .botonera .botonCompartir p{
+    margin-top: 25%;
+    color: var(--txt-gris);
+    font-size: 0.8rem;
+}
